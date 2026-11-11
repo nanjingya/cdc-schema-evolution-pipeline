@@ -1,0 +1,29 @@
+entity: customers
+primary_key: [customer_id]
+version: 1
+fields:
+  customer_id: string
+  email: string
+  country: string
+  balance: int64
+  updated_at: timestamp
+  op: string
+  event_id: string
+  event_ts: timestamp
+evolution_rules:
+  allow_add_nullable_columns: true
+  allow_type_widen:
+    int32: [int64]
+    float32: [float64]
+  forbid_drop_columns: true
+  forbid_type_narrow: true
+watermark:
+  field: event_ts
+  lateness: 2h
+dq_rules:
+  - name: email_required_unless_delete
+    expr: "op == 'D' or (email is not null and email != '')"
+  - name: balance_non_negative_on_upsert
+    expr: "op == 'D' or balance >= 0"
+  - name: event_id_unique_in_batch
+    expr: "event_id unique"

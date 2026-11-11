@@ -1,0 +1,6 @@
+{"event_id":"e4","op":"U","customer_id":"c2","email":"b2@x.com","country":"CN","balance":25,"tier":"gold","updated_at":"2024-01-01T03:00:00Z","event_ts":"2024-01-01T03:00:01Z"}
+{"event_id":"e5","op":"D","customer_id":"c1","email":null,"country":"US","balance":15,"updated_at":"2024-01-01T03:05:00Z","event_ts":"2024-01-01T03:05:00Z"}
+{"event_id":"e6","op":"I","customer_id":"c3","email":"c@x.com","country":"DE","balance":-1,"tier":"silver","updated_at":"2024-01-01T03:06:00Z","event_ts":"2024-01-01T03:06:00Z"}
+{"event_id":"e7","op":"U","customer_id":"c2","email":"late@x.com","country":"CN","balance":99,"tier":"gold","updated_at":"2024-01-01T00:30:00Z","event_ts":"2024-01-01T00:30:00Z"}
+{"event_id":"e4","op":"U","customer_id":"c2","email":"dup@x.com","country":"CN","balance":1,"tier":"gold","updated_at":"2024-01-01T03:07:00Z","event_ts":"2024-01-01T03:07:00Z"}
+{"event_id":"e8","op":"I","customer_id":"c4","email":"","country":"JP","balance":3,"tier":"bronze","updated_at":"2024-01-01T03:08:00Z","event_ts":"2024-01-01T03:08:00Z"}

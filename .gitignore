@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.DS_Store
+.env
+*.log
+lake/**
+!lake/.gitkeep
+quarantine/**
+!quarantine/.gitkeep
+meta/checkpoints/**
+!meta/checkpoints/.gitkeep
+meta/manifests/**
+!meta/manifests/.gitkeep
